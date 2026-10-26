@@ -1,0 +1,49 @@
+{
+  "schemaVersion": 1,
+  "protocolVersion": 1,
+  "id": "cn.rismd.hades.wizard.fixture",
+  "version": "1.0.0",
+  "display": {
+    "name": "Fixture Configuration",
+    "description": "A small provider for testing the reusable native wizard."
+  },
+  "pages": [
+    {
+      "id": "identity",
+      "title": "Configuration identity",
+      "description": "Name this sample configuration.",
+      "fields": [
+        {
+          "id": "configurationName",
+          "label": "Configuration &name:",
+          "description": "A non-empty display name.",
+          "type": "STRING",
+          "required": true,
+          "defaultValue": "Sample configuration"
+        }
+      ]
+    },
+    {
+      "id": "message",
+      "title": "Configuration content",
+      "description": "Enter a message to prove multi-page navigation.",
+      "fields": [
+        {
+          "id": "message",
+          "label": "&Message:",
+          "description": "Text stored in the fixture configuration.",
+          "type": "STRING",
+          "required": true,
+          "defaultValue": "Hello from HADES-Wizard"
+        }
+      ]
+    }
+  ],
+  "reports": [
+    {
+      "id": "summary",
+      "title": "Configuration summary",
+      "description": "The values captured by the fixture provider."
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <parent><groupId>cn.rismd.hades</groupId><artifactId>cn.rismd.hades.wizard.parent</artifactId><version>1.0.0-SNAPSHOT</version><relativePath>../../pom.xml</relativePath></parent>
+  <artifactId>cn.rismd.hades.wizard.ui.tests</artifactId>
+  <packaging>eclipse-test-plugin</packaging>
+  <build><plugins><plugin><groupId>org.eclipse.tycho</groupId><artifactId>tycho-surefire-plugin</artifactId>
+    <configuration>
+      <providerHint>junit4</providerHint>
+      <useUIHarness>false</useUIHarness><useUIThread>false</useUIThread>
+      <argLine>-Dorg.eclipse.swtbot.search.timeout=5000 -Dorg.eclipse.swtbot.playback.delay=20</argLine>
+    </configuration>
+  </plugin></plugins></build>
+  <profiles>
+    <profile>
+      <id>hades-sram-integration</id>
+      <build><plugins><plugin><groupId>org.eclipse.tycho</groupId><artifactId>tycho-surefire-plugin</artifactId>
+        <configuration>
+          <argLine>-Dosgi.locking=none -DGDK_BACKEND=x11 -Dorg.eclipse.swtbot.search.timeout=10000 -Dorg.eclipse.swtbot.playback.delay=20 -Dhades.sram.descriptor=${hades.sram.descriptor} -Dhades.sram.python=${hades.sram.python}</argLine>
+          <forkedProcessTimeoutInSeconds>600</forkedProcessTimeoutInSeconds>
+          <environmentVariables><GDK_BACKEND>x11</GDK_BACKEND></environmentVariables>
+        </configuration>
+      </plugin></plugins></build>
+    </profile>
+  </profiles>
+</project>

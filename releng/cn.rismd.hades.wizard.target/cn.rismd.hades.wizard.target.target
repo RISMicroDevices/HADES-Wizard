@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?pde version="3.8"?>
+<target name="HADES-Wizard Eclipse 4.41 Java 21" sequenceNumber="1">
+  <locations>
+    <location includeAllPlatforms="false" includeConfigurePhase="false" includeMode="planner" includeSource="false" type="InstallableUnit">
+      <repository location="https://download.eclipse.org/eclipse/updates/4.41/R-4.41-202608281142/"/>
+      <unit id="org.eclipse.core.runtime" version="0.0.0"/>
+      <unit id="org.eclipse.equinox.app" version="0.0.0"/>
+      <unit id="org.eclipse.equinox.executable.feature.group" version="0.0.0"/>
+      <unit id="org.eclipse.jface" version="0.0.0"/>
+      <unit id="org.eclipse.swt" version="0.0.0"/>
+    </location>
+    <location includeAllPlatforms="false" includeConfigurePhase="false" includeMode="planner" includeSource="false" type="InstallableUnit">
+      <repository location="https://mirror1.hs-esslingen.de/Mirrors/eclipse/justj/jres/21/updates/release/21.0.9/"/>
+      <unit id="org.eclipse.justj.openjdk.hotspot.jre.full.feature.group" version="21.0.9.v20251105-0741"/>
+    </location>
+    <location includeAllPlatforms="false" includeConfigurePhase="false" includeMode="planner" includeSource="false" type="InstallableUnit">
+      <repository location="https://download.eclipse.org/technology/swtbot/releases/4.3.0/"/>
+      <unit id="org.eclipse.swtbot.swt.finder" version="4.3.0.202506021445"/>
+    </location>
+    <location includeDependencyDepth="none" includeSource="false" type="Maven">
+      <groupId>com.google.code.gson</groupId><artifactId>gson</artifactId><version>2.13.2</version>
+    </location>
+    <location includeDependencyDepth="none" includeSource="false" missingManifest="generate" type="Maven">
+      <groupId>junit</groupId><artifactId>junit</artifactId><version>4.13.2</version>
+    </location>
+    <location includeDependencyDepth="none" includeSource="false" type="Maven">
+      <groupId>org.hamcrest</groupId><artifactId>hamcrest</artifactId><version>2.2</version>
+    </location>
+  </locations>
+</target>

@@ -1,0 +1,7 @@
+target/
+.m2/
+.toolchain/
+.local/
+.metals/
+*.log
+.DS_Store

@@ -1,0 +1,16 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: HADES Wizard SWTBot Tests
+Bundle-SymbolicName: cn.rismd.hades.wizard.ui.tests
+Bundle-Version: 1.0.0.qualifier
+Bundle-RequiredExecutionEnvironment: JavaSE-21
+Require-Bundle: cn.rismd.hades.wizard.core;bundle-version="[1.0.0,2.0.0)",
+ cn.rismd.hades.wizard.modulepreview;bundle-version="[1.0.0,2.0.0)",
+ cn.rismd.hades.wizard.ui;bundle-version="[1.0.0,2.0.0)",
+ org.eclipse.swt;bundle-version="[3.132.0,4.0.0)",
+ org.eclipse.jface;bundle-version="[3.38.0,4.0.0)",
+ org.eclipse.swtbot.swt.finder;bundle-version="[4.3.0,5.0.0)"
+Import-Package: org.junit;version="[4.13.2,5.0.0)",
+ org.junit.function;version="[4.13.2,5.0.0)",
+ org.hamcrest;version="[2.2.0,3.0.0)",
+ com.google.gson;version="[2.13.0,3.0.0)"

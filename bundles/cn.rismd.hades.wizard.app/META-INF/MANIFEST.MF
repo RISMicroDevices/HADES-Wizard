@@ -1,0 +1,14 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: HADES Wizard Application
+Bundle-SymbolicName: cn.rismd.hades.wizard.app;singleton:=true
+Bundle-Version: 1.0.0.qualifier
+Bundle-Vendor: RISMD
+Bundle-RequiredExecutionEnvironment: JavaSE-21
+Require-Bundle: cn.rismd.hades.wizard.core;bundle-version="[1.0.0,2.0.0)",
+ cn.rismd.hades.wizard.ui;bundle-version="[1.0.0,2.0.0)",
+ org.eclipse.core.runtime;bundle-version="[3.35.0,4.0.0)",
+ org.eclipse.equinox.app;bundle-version="[1.7.0,2.0.0)",
+ org.eclipse.jface;bundle-version="[3.38.0,4.0.0)",
+ org.eclipse.swt;bundle-version="[3.132.0,4.0.0)"
+Export-Package: cn.rismd.hades.wizard.app

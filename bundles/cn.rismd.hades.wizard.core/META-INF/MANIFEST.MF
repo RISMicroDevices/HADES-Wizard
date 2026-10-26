@@ -1,0 +1,13 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: HADES Wizard Core
+Bundle-SymbolicName: cn.rismd.hades.wizard.core
+Bundle-Version: 1.0.0.qualifier
+Bundle-Vendor: RISMD
+Bundle-RequiredExecutionEnvironment: JavaSE-21
+Import-Package: com.google.gson;version="[2.13.0,3.0.0)",
+ com.google.gson.stream;version="[2.13.0,3.0.0)"
+Export-Package: cn.rismd.hades.wizard.core.backend,
+ cn.rismd.hades.wizard.core.json,
+ cn.rismd.hades.wizard.core.launch,
+ cn.rismd.hades.wizard.core.provider

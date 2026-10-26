@@ -1,0 +1,9 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: HADES Wizard Module Port Preview
+Bundle-SymbolicName: cn.rismd.hades.wizard.modulepreview
+Bundle-Version: 1.0.0.qualifier
+Bundle-Vendor: RISMD
+Bundle-RequiredExecutionEnvironment: JavaSE-21
+Require-Bundle: org.eclipse.swt;bundle-version="[3.132.0,4.0.0)"
+Export-Package: cn.rismd.hades.wizard.modulepreview

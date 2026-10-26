@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feature id="cn.rismd.hades.wizard.feature" label="HADES-Wizard" version="1.0.0.qualifier" provider-name="RISMD">
+  <description>Standalone native declarative configuration wizard. No Eclipse workbench or IDE workspace.</description>
+  <copyright>Third-party components retain their respective copyrights and licenses.</copyright>
+  <plugin id="cn.rismd.hades.wizard.core" download-size="0" install-size="0" version="0.0.0" unpack="false"/>
+  <plugin id="cn.rismd.hades.wizard.modulepreview" download-size="0" install-size="0" version="0.0.0" unpack="false"/>
+  <plugin id="cn.rismd.hades.wizard.ui" download-size="0" install-size="0" version="0.0.0" unpack="false"/>
+  <plugin id="cn.rismd.hades.wizard.app" download-size="0" install-size="0" version="0.0.0" unpack="false"/>
+</feature>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+  <extension id="application" point="org.eclipse.core.runtime.applications">
+    <application cardinality="singleton-global" thread="main" visible="true">
+      <run class="cn.rismd.hades.wizard.app.WizardApplication"/>
+    </application>
+  </extension>
+  <extension id="product" point="org.eclipse.core.runtime.products">
+    <product name="HADES-Wizard" application="cn.rismd.hades.wizard.app.application" description="Native declarative configuration wizard">
+      <property name="windowImages" value="icons/wizard-16.png,icons/wizard-32.png,icons/wizard-48.png,icons/wizard-64.png,icons/wizard-128.png,icons/wizard-256.png"/>
+      <property name="aboutImage" value="icons/wizard-64.png"/>
+      <property name="aboutText" value="HADES-Wizard 1.0%0AA standalone native configuration wizard.%0A%0AThird-party components retain their respective licenses. See THIRD_PARTY_NOTICES.txt."/>
+    </product>
+  </extension>
+</plugin>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?pde version="3.5"?>
+<product name="HADES-Wizard" uid="cn.rismd.hades.wizard.product" id="cn.rismd.hades.wizard.app.product" application="cn.rismd.hades.wizard.app.application" version="1.0.0.qualifier" useFeatures="true" includeLaunchers="true">
+  <configIni use="default"/>
+  <configurations>
+    <plugin id="org.eclipse.equinox.common" autoStart="true" startLevel="2"/>
+    <plugin id="org.apache.felix.scr" autoStart="true" startLevel="2"/>
+    <plugin id="org.eclipse.equinox.registry" autoStart="true" startLevel="3"/>
+    <plugin id="org.eclipse.core.runtime" autoStart="true" startLevel="4"/>
+    <plugin id="org.eclipse.equinox.app" autoStart="true" startLevel="4"/>
+  </configurations>
+  <launcherArgs>
+    <programArgs>-consoleLog</programArgs>
+    <vmArgs>-Dorg.eclipse.swt.graphics.Resource.reportNonDisposed=false
+-Dosgi.locking=none</vmArgs>
+  </launcherArgs>
+  <windowImages i16="../../bundles/cn.rismd.hades.wizard.app/icons/wizard-16.png" i32="../../bundles/cn.rismd.hades.wizard.app/icons/wizard-32.png" i48="../../bundles/cn.rismd.hades.wizard.app/icons/wizard-48.png" i64="../../bundles/cn.rismd.hades.wizard.app/icons/wizard-64.png" i128="../../bundles/cn.rismd.hades.wizard.app/icons/wizard-128.png" i256="../../bundles/cn.rismd.hades.wizard.app/icons/wizard-256.png"/>
+  <launcher name="hades-wizard">
+    <linux icon="../../bundles/cn.rismd.hades.wizard.app/icons/hades-wizard.xpm"/>
+    <win useIco="true"><ico path="../../bundles/cn.rismd.hades.wizard.app/icons/hades-wizard.ico"/></win>
+  </launcher>
+  <features>
+    <feature id="cn.rismd.hades.wizard.feature"/>
+    <feature id="org.eclipse.justj.openjdk.hotspot.jre.full" version="21.0.9.v20251105-0741"/>
+  </features>
+</product>
